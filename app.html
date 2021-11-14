@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        body {
+            background-color: #404040;
+            color: whitesmoke;
+        }
+
+        ul,
+        .control-btns {
+            margin: 20px auto;
+            width: 500px;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            list-style: none;
+            border: 1px solid #dcdcdc;
+        }
+
+        .control-btns .btns {
+            display: inline-block;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <select name="" id="set-items">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15" selected>15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="45">45</option>
+            <option value="50">50</option>
+            <option value="0">All</option>
+        </select>
+        <div class="control-btns">
+            <div class="btns">
+                <button type="button" id="first">First</button>
+                <button type="button" id="back">Back</button>
+            </div>
+            <div class="btns page-btns"></div>
+            <div class="btns">
+                <button type="button" id="next">Next</button>
+                <button type="button" id="last">Last</button>
+            </div>
+        </div>
+        <div class="list-items"></div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
